@@ -30,7 +30,9 @@ Broken Access Control happens when the server doesn’t properly enforce **who 
 If you don't get access to more roles but can view the data of another users, what type of privilege escalation is this? Horizontal
 What is the note you found when viewing the user's account who had more than $ 1 million? THM{Found.the.Millionare!} 
 
-![image.png](Eng%206%201%20OWASP%20Top%2010%202025%20IAAA%20Failures%20and%20API/image.png)
+
+<img width="1408" height="768" alt="Gemini_Generated_Image_twq5p8twq5p8twq5" src="https://github.com/user-attachments/assets/29a490ca-b3c8-423f-b46f-ddc9df2a82ff" />
+
 
 #### **Task 4 - A07: Authentication Failures**
 
@@ -44,7 +46,8 @@ Authentication Failures happen when an application can’t reliably verify or bi
 **Answer the questions below**
 What is the flag on the admin user's dashboard? THM{Account.confusion.FTW!}
 
-![image.png](Eng%206%201%20OWASP%20Top%2010%202025%20IAAA%20Failures%20and%20API/image%201.png)
+<img width="905" height="492" alt="image" src="https://github.com/user-attachments/assets/c2694163-2034-47e6-80c2-fb5e729130fb" />
+
 
 #### **Task 5 - A09: Logging & Alerting Failures**
 
@@ -53,13 +56,17 @@ Without proper logging and alerting, security teams may miss attacks or struggle
 **Answer the questions below**
 It looks like an attacker tried to perform a brute-force attack, what is the IP of the attacker? 203.0.113.45
 
-![image.png](Eng%206%201%20OWASP%20Top%2010%202025%20IAAA%20Failures%20and%20API/image%202.png)
+<img width="746" height="553" alt="image 1" src="https://github.com/user-attachments/assets/cd9c0aac-d822-417e-8300-02eabc79547a" />
+
 
 Looks like they were able to gain access to an account! What is the username associated with that account? admin
 
 What action did the attacker try to do with the account? List the endpoint the accessed. /supersecretadminstuff
 
-![image.png](Eng%206%201%20OWASP%20Top%2010%202025%20IAAA%20Failures%20and%20API/image%203.png)
+<img width="913" height="263" alt="image 2" src="https://github.com/user-attachments/assets/986ba60e-5ea7-4df5-9939-1bd780286c11" />
+
+<img width="900" height="262" alt="image 3" src="https://github.com/user-attachments/assets/620ea5b7-2f44-402b-b604-a87c246930ca" />
+
 
 #### **Task 6 - Conclusion**
 
