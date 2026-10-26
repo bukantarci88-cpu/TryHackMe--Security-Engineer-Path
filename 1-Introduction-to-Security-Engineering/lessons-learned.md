@@ -1,0 +1,1 @@
+Security is a continuous engineering process built on core frameworks (CIA triad, Defense-in-Depth), essential cryptographic implementations (AES, PKI, TLS), and strict IAM controls governing identification, authentication, and authorization.
