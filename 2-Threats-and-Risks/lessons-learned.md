@@ -1,0 +1,1 @@
+Managing risk requires moving from reactive patching to structured threat modeling (e.g., STRIDE), robust governance policies, and continuous vulnerability lifecycle management to prioritize critical exposure.
