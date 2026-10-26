@@ -53,7 +53,6 @@ The `/nostromo` endpoint handles POST requests. During the code review, I identi
 ![image.png](DevSecOps%203-4-Mothers-Secret/image.png)
 
 
-
 From source 
 
 ![image.png](DevSecOps%203-4-Mothers-Secret/image%201.png)
