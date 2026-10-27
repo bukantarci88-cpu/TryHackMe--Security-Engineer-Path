@@ -56,8 +56,6 @@ Before delving into different threat modelling frameworks, let's briefly run thr
 
 An ﻿attack tree is a graphical representation used in threat modelling to systematically describe and analyse potential threats against a system, application or infrastructure. It provides a structured, hierarchical approach to breaking down attack scenarios into smaller components. Each node in the tree represents a specific event or condition, with the root node representing the attacker's primary goal. For a quick example, let's use the diagram below that represents a scenario of an attacker trying to gain unauthorised access to sensitive data stored in a cloud-based storage system.
 
-![Attack Tree representation of Gain unauthorised access to sensitive data.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/ab10d8571dca42dfcab63c952c436413.png)
-
 In this diagram, the root node represents the attacker's primary goal: **gain unauthorised access to sensitive data**. The first level of child nodes represents different high-level strategies an attacker might do to achieve the goal. Each node further breaks down into specific steps, detailing the attacker's possible techniques and actions.
 
 In addition to the traditional hierarchical structure, attack trees can be organised as attack paths, which depict the possible routes or sequences of vulnerabilities a threat actor can exploit to achieve their goal. Attack paths are essentially chains of vulnerabilities that are interconnected.
@@ -89,23 +87,13 @@ The ATT&CK framework is organised into a matrix that covers various tactics (hig
 
 1. Technique Name and Details: Information such as name, detailed explanation of the technique, types of data or logs that can help or detect, and platforms (Windows, MacOS, Linux) relevant to the technique.
     
-    ![Name and Details under the Exploit Public-Facing Application technique.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/d9026d5ac1c84632ad1e45bd6208e7ae.png)
-    
 2. Procedure Examples: Real-world examples of how threat actors have employed the technique in their adversarial operations.
-    
-    ![Procedure Examples showing usage of Exploit Public-Facing Application technique.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/218fa71ca2fe34549424b82152c4b5fb.png)
     
 3. Mitigations: Recommended security measures and best practices to protect against the technique.
     
-    ![Mitigations or ways to prevent Exploit Public-Facing Application technique.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/5cb8f4b6f8351efd801b134741e41536.png)
-    
 4. Detections: Strategies and indicators that can help identify the technique, as well as potential challenges in detecting the technique.
     
-    ![Examples of ways to detect Exploit Public-Facing Application technique.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/e4a542bb8405b6bdfa0cf814c50f491c.png)
-    
 5. References: External sources, reports, and articles that provide additional information, context, or examples related to the technique.
-    
-    ![List of additional references for Exploit Public-Facing Application technique.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/40674f569307d70862844c0fcd69d7f5.png)
     
 
 **Applying MITRE ATT&CK in Threat Modelling Process**
