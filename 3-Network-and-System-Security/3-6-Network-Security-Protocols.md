@@ -76,8 +76,6 @@ Common Ports
 
 Without SMTPS, emails sent via standard SMTP can be intercepted and read in plain text while traveling across networks.
 
-![Diagram showing the SMTP protocol used to transfer email messages across the Internet.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/0675230daa95a5bcfdaf2d9017de25b1.png)
-
 **POP3S Protocol: POP3S (Post Office Protocol Secure)** is the secure version of POP3, used to **retrieve emails securely** from a mail server to an email client. It enhances POP3 by adding **TLS/SSL encryption**, protecting credentials and email content during transmission. How POP3 Works: POP3 is an email retrieval protocol that downloads messages from a mail server to a user's device.
 
 1. The email client connects to the mail server.
@@ -99,7 +97,6 @@ Without SMTPS, emails sent via standard SMTP can be intercepted and read in plai
 
 In short, **POP3S = POP3 + TLS/SSL encryption**, enabling secure email retrieval from mail servers.
 
-![Figure showing how POP3S uses TLS to encrypt communication between the email client and the email server.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/9532e1d438c7ad07222bcb3977a4376b.png)
 
 The POP3S Protocol uses port 995, while POP3 uses port 110.  
 
@@ -240,8 +237,6 @@ Provide the number of the client that encrypts the traffic.
     
     
 
-![Figure showing SSL/TLS handshake](https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/f1a7e8eaf28b773aab4b5d3ae0f563b6.png)
-
 TLS is a wrapper that encrypts communication of communication protocols. It has port numbers for various protocols, such as 443 for HTTPS and 990 for FTPS.
 
 **SOCKS5 Protocol:** Socket Secure (SOCKS) is a proxy protocol for data exchange through a delegate server (SOCKS5 proxy). It is used to secure application layer protocols. For example, the Squid server implements the SOCKS5 protocol to transfer data via the HTTP protocol.
@@ -259,7 +254,6 @@ TLS is a wrapper that encrypts communication of communication protocols. It has
 - **Data Transfer**
     - After successfully associating both clients with a proxy server, both clients can exchange data and share information that will be routed through the proxy server.
 
-![Figure showing client A connecting to a SOCKS5 proxy and using that as a relay to connect to Client B.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/3814e1abc3946c5f256e5b9aa7eff893.png)
 
 **Benefits of SOCKS5**
 
@@ -300,8 +294,6 @@ THM{GOT_THE_SSLKEY}
 1. Transport Mode: Provides authentication for the TCP/UDP header and data.
 2. Tunnel Mode: Provides authentication for the IP header, TCP/UDP header, and data.
 
-![Figure showing IPsec Authentication Header (AH) in transport mode and in tunnel mode.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/d33c96d4525b25694790be6ff0c31d8e.png)
-
 The AH protocol is suitable if providing authentication and integrity is enough without confidentiality. It is worth mentioning that AH is optional in IPsec-v3; however, it is mandatory to implement in IPsec-v2.
 
 **Encapsulating Security Payload (ESP):** Encapsulating Security Payload (ESP) provides encryption in addition to authentication and integrity. It works in two modes:
@@ -312,7 +304,6 @@ The AH protocol is suitable if providing authentication and integrity is enoug
      
     
 
-![Figure showing IPsec Encapsulating Security Payload (ESP) protocol in transport mode and in tunnel mode](https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/f8c38bc132212830e305f2bf19185a55.png)
 
 **VPN:** When the TCP/IP protocol was designed, security requirements such as confidentiality and integrity were not a design target. In contrast, availability was the priority as one of the purposes of the Internet is to withstand a nuclear attack, as is evident by the routing protocols adapting quickly when a link goes down. But we need to allow a corporation to use the existing Internet infrastructure to connect its offices securely. The answer lies in setting up a VPN.
 
@@ -320,7 +311,6 @@ A Virtual Private Network (VPN) makes it possible to establish a private connect
 
 For instance, in the figure below, we can see a remote office and a remote user connected over a VPN to the main office. A VPN connection requires a VPN client and a VPN server or concentrator. All the traffic between the VPN client and server is encrypted.
 
-![Network diagram showing a remote office and a remote user connecting to the main office over VPN.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/898973f759258b860a457724055fae7b.png)
 
 The two most common protocols used to establish VPN connections are:
 
