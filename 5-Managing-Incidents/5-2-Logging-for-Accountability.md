@@ -164,4 +164,3 @@ wmic
 
 3
 
-![image.png](Eng%205%202%20Logging%20for%20Accountability/image%204.png)
