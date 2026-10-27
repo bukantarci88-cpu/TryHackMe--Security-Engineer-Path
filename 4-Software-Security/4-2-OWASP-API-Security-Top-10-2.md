@@ -13,14 +13,10 @@ Likely Impact: The attack may result in data tampering and privilege escalation 
 - Bob has successfully designed the form and used the mass assignment feature in Laravel to store all the incoming data from the client side to the
 database (as shown below).
 
-![image.png](Eng%204%202%20OWASP%20API%20Security%20Top%2010%20-%202/image.png)
-
 <img width="735" height="520" alt="image" src="https://github.com/user-attachments/assets/12075c52-673d-470b-b7fb-af8ab4cfa49d" />
 
 
 The solution to the problem is pretty simple. Bob must ensure necessary filtering on the server side (apirule6/user_s) and ensure that the default value of credit should be inserted as 50, even if more than 50 is received from the client side (as shown below). 
-
-![image.png](Eng%204%202%20OWASP%20API%20Security%20Top%2010%20-%202/image%201.png)
 
 <img width="735" height="469" alt="image 1" src="https://github.com/user-attachments/assets/3962629c-e7e7-487a-8d03-b7993f8b3c76" />
 
@@ -61,11 +57,9 @@ Likely Impact: Security misconfiguration can give intruders complete knowledge o
 - The company MHT is facing serious server availability issues. Therefore, they assigned Bob to develop an API endpoint `/apirule7/ping_v` (GET) that will share details regarding server health and status.
 - Bob successfully designed the endpoint; however, he forgot to implement any error handling to avoid any information leakage.
 
-![image.png](Eng%204%202%20OWASP%20API%20Security%20Top%2010%20-%202/image%202.png)
 
 - The solution to the issue is pretty simple. Bob will create an API endpoint `/apirule7/ping_s` that will carry out error handling and only share desired information with the user (as shown below).
 
-![Image for Secure Scenario](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/9087274b07f2fa5174398b0bb0c69979.png)
 
 **Mitigation Measures**
 
@@ -86,7 +80,6 @@ Try to use the API call /apirule7/ping_s in the attached VM.
 > What is the HTTP response code?
 > 
 
-![](https://miro.medium.com/v2/resize:fit:700/1*LpnXCr4rfB0a7khkL47fCw.png)
 
 <img width="735" height="480" alt="image 2" src="https://github.com/user-attachments/assets/d3aba8bf-aaf2-4265-956b-33e6d61b1562" />
 
@@ -187,7 +180,6 @@ Answer: **Nay**
 
 Make an API call to /apirule9/v1/user/login using the username “**Alice**” ****and password “**##!@#!!**”.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*vymiIPpcBf7O7sz12UcqNw.png)
 
 > What is the amount of balance associated with user Alice?
 > 
@@ -211,10 +203,6 @@ Insufficient logging & monitoring reflects a scenario when an attacker conducts 
 - Continue to use the Chrome browser and Talend API Tester for debugging in the VM.
 - In the past, the company MHT has been susceptible to multiple attacks, and the exact culprit behind the attacks could not be identified.
 Therefore, Bob was assigned to make an API endpoint `/apirule10/logging` (GET) that will log users' metadata (IP address, browser version etc.) and save it in the database as well (as shown below).
-
-![image.png](Eng%204%202%20OWASP%20API%20Security%20Top%2010%20-%202/image%207.png)
-
-![Uploading image.png…]()
 
 
 **Mitigation Measures**
