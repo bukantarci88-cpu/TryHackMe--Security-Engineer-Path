@@ -136,8 +136,6 @@ This task will have a walkthrough on creating a layer and mapping the relevant t
 
 **Creating a New Layer:** To start with, let's create a new layer and choose enterprise.
 
-![Creation of a new layer - Enterprise Matrix.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/b297cc481e64b98e727c0c2bc3c1bb78.png)
-
 You may have observed that there are three options for creating a new layer. These layers pertain to the three MITRE ATT&CK matrices, namely:
 
 - **Enterprise** - The Enterprise Matrix focuses on threats and techniques commonly used against enterprise networks.
@@ -146,54 +144,36 @@ You may have observed that there are three options for creating a new layer. The
 
 We have chosen the Enterprise Matrix to cover threat actors' typical techniques when targeting an organisation. After creating a new layer, you will have this view once the web page has loaded.
 
-![Initial view of all techniques under the Enterprise matrix.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/d74cd02274b8f09d20cd6b2cf853c2a5.png)
-
 **Searching and Selecting Techniques**
 
 The first important feature we want to utilise in this application is the search functionality under the **Selection Controls** panel. This feature allows us to search and multi-select techniques you want to highlight or mark.
 
 You may press the magnifier button to access the right sidebar, search using any keywords, or choose any selection under **Techniques, Threat Groups, Software, Mitigations, Campaigns, or Data Sources**.
 
-![Search functionality example usage.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/04d12a47541923fc4a7b1ed229293fa1.png)
 
 For a quick example, search for **APT41** and hover its entry on the **Threat Groups** section. You may observe that it will highlight all techniques attributed to this threat group. Once you click the select button, the highlighted techniques will be selected as a group and can be annotated with a score or a background fill, which will be discussed in the following instructions.
 
-![Techniques highlighted after searching APT41.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/f11e5b772011876f8255d6abd97a1b1b.png)
-
 After selecting the threat group, you may also observe that the deselect button now has a numerical value. This indicates the current number of chosen techniques. You may press this button to remove all your current technique selections.
 
-![Deselect button representing the number of selected techniques.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/9e443200b84f84d93773d6294ed2745e.png)
-
 Lastly, you may right-click any technique if you prefer to do an action on a single technique (e.g. select, add to selection, remove from selection).
-
-![Additional actions through right-click.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/10260d2f4c50533fbc471e86ed6b0bfb.png)
 
 **Viewing, Sorting and Filtering Layers:** We will tackle the next set of features under the **Layer Controls** panel. However, we will only focus on the following:
 
 - Exporting features (download as JSON , Excel, SVG) - This allows you to dump the selected techniques, including all annotations. The data exported can be ingested again in the ATT&CK Navigator for future use.
 - Filters - Allows you to filter techniques based on relevant platforms, such as operating systems or applications. For a quick example, the image below shows all techniques that are attributed to Office365.
-
-![Filtered list of techniques with O365 filter.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/4ecfb35e8b4b7784e55d46e0e419980f.png)
-
+  
 - Sorting - This allows you to sort the techniques by their alphabetical arrangement or numerical scores. The image below shows that all techniques are arranged alphabetically.
-
-![Example usage of sorting the techniques.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/4c4b5706ce7f8c6cefead64434592760.png)
 
 - Expand sub-techniques - View all underlying sub-techniques under each technique, expanding the view for all techniques. You will have a similar view with the image below once you have expanded the sub-techniques.
 
-![Expanding all sub-techniques in one view.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/57b9e0faedfe675aacbb7e039c2347bb.png)
 
 **Annotating Techniques:** Now, the last set of features is under the **Technique Controls** panel. These buttons allow you to annotate details on selected techniques. For a quick run-through, here are the features under the panel mentioned (from left to right):
 
-![Buttons under the technique controls.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/873f7f63e9ccdeca22cba95214f21179.png)
-
 - Toggle state - This feature allows you to disable the selected techniques, making their view greyed-out.
-
-![Example usage of a toggle button.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/baa4cdd097c0313b28e9f2619afd037c.png)
 
 - Background color - This allows you to change the background color of the selected technique, for highlighting and grouping purposes.
 
-![Example usage of changing the background colours of the techniques.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/e319c6fbf48e55db4295ffe97a2bc99c.png)
+
 
 - Scoring - Allows you to rate each technique or set of techniques based on criteria depending on your needs, such as the impact of a technique.
 - Comment - Allows you to add notes and observations to a technique.
@@ -203,7 +183,6 @@ Lastly, you may right-click any technique if you prefer to do an action on a sin
 
 The image below is an example of using Scoring, Comment, Link and Metadata features.
 
-![Adding metadata on a single technique.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/a87be0e2e7f306a3ac0f52e0eacb9b7c.png)
 
 Utilising ATT&CK Navigator: To put the concepts of this framework into practice, let's use the following scenario below. You are tasked to utilise the MITRE ATT&CK framework for your threat modelling exercise. The organisation you're currently working with is in the financial services industry. Given that, some known threat groups targeting this industry are:
 
