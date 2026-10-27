@@ -27,8 +27,6 @@ remote exploit
 
 The Department of Defense (DoD) has implemented a [Vulnerability Disclosure Program (VDP)(opens in new tab)](https://www.dc3.mil/Missions/Vulnerability-Disclosure/Vulnerability-Disclosure-Program-VDP/) that uses the widely recognized [Lifecycle of a Vulnerability Framework(opens in new tab)](https://thescif.org/lifecycle-of-a-vulnerability-overview-part-one-374a01c73096?gi=8ba01d1d3d89) to better understand how vulnerabilities can be mitigated earlier. A VDP typically involves the triage, validation, and mitigation facilitation of vulnerability reports submitted by researchers. The five stages of the Lifecycle of a Vulnerability Framework are **Discovery, Coordination, Mitigation, Management, and Lessons Learned**; however, the path a vulnerability follows from identification to patching can vary. The following flow displays the different stages of the lifecycle of a vulnerability in a more-or-less linear manner.
 
-![Different stages of the lifecycle of a vulnerability](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/010b30ab11a3760f6a43d52cb2782c46.png)
-
 - **Product Launched:** A vendor in the public market launches an information technology product (hardware or software).
 - **Vulnerability Discovery (Public or Private):** Researchers working independently or sponsored by private/public organizations for various interests discover vulnerabilities in the product. A 0-day vulnerability is one that has yet to be made public after being found. In any other case, when a vulnerability is found, it is made available to the general public via the internet or other special sources. Before the vulnerability is publicly disclosed online, the manufacturer typically has already developed a patch or update for the product at this stage.
 - **Development of a Proof of Concept (PoC) or Exploit:** A PoC proving the exploitability of the newly discovered vulnerability is prepared in-house by the vendor or received from bug bounty hunters/independent researchers. It is crucial at this stage to keep the vulnerability disclosure discrete as the PoC is typically the first stage in developing an exploit, and bad actors can use it in the wild.
@@ -59,8 +57,6 @@ Weaponizing vulnerabilities or creating exploits based on existing vulnerabiliti
 
 A vulnerability may be weaponized by **locally developing an exploit or purchasing it from suppliers** in underground forums or specialized marketplaces. The flow chart shows an annotated picture highlighting the opportunity period for weaponizing a vulnerability.
 
-![flow chart of the opportunity period for weaponizing a vulnerability](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/e0bed60e9d9bd82ec747e4fac57d2c30.png)
-
 The window of opportunity for resource exploitation varies and depends on several factors, including update availability, discovery time, and failure severity. Exploiting **0-day vulnerabilities can take a few days to several months or even years**. Since 0-day attacks are typically targeted at specific targets, finding them takes time and effort. In the above figure, the n-day refers to an exploit with a patch available. Here "**n**" refers to the number of days elapsed since the patch was released.
 
 As mentioned above, the date when a vulnerability has first been discovered is typically unknown; however, the CVE database shows the dates of CVE-ID assignments and publications. CVEs are often released as soon as the vendors push out the patch. **Adversaries with access to the updated software can reverse-engineer the patch to find the vulnerability**. According to the [Exploit Database(opens in new tab)](https://www.exploit-db.com/), most public exploits are created in the first week following the release of a patch. To offer their clients more time to upgrade, certain manufacturers might postpone the CVE announcement. When a CVE is formally released, the public can immediately access information about the vulnerability. Most security providers begin creating their vulnerability signatures and prevention strategies at this time to ensure mitigation from threat actors.
@@ -82,8 +78,6 @@ n-day
 Chaining exploits in tandem, also known as "**exploit chaining**" or "**multi-stage exploitation**", is a technique hackers use to string together multiple exploits for vulnerabilities to gain complete control of a target system. The desired goal is to develop a complete **Remote Code Execution (RCE) chain**, allowing the attacker to execute arbitrary code on the target system with the highest privileges.
 
 - **Reconnaissance:** The attacker will gather information about the target system and its vulnerabilities. This can be done through various methods, such as network scanning, port scanning, and vulnerability scanning.
-    
-    ![Chaining exploits lifecycle](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/6db928385248e0724b3f785390be98fc.png)
     
 - **Initial Exploit:** The attacker will use the information gathered during the reconnaissance phase to identify an initial vulnerability that can be exploited, which could be known and that has not been patched. The attacker will use an exploit that takes advantage of this vulnerability to gain access to the target system.
 - **Privilege Escalation:** This will allow them to access sensitive information, such as login credentials and system files, and execute code with higher privileges.
@@ -113,8 +107,6 @@ persistence
 To demonstrate the process for **"exploit chaining in tandem to develop a complete RCE Remote Code Execution (RCE) chain"**, let's examine a real-world situation. The exercise focuses more on how to chain vulnerabilities than **how to exploit a vulnerability**.
 
 **How to Chain Multiple Exploits:** Using a case study, let's dig deeper into various phases of exploit chaining. The installation procedure and the fundamental commands are not covered as the goal of this study is to chain exploits for developing a complete RCE chain.
-
-![Login form for the web application](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/c10ae7f395dcc50b72d71ca5a2e7adb9.png)
 
 **Answer the questions below**
 
