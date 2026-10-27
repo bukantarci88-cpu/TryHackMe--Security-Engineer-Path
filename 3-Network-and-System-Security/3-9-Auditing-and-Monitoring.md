@@ -337,7 +337,6 @@ Correctly analysing Windows logs empowers administrators to address security iss
 
 **Windows Event Viewer:** Let’s start the Event Viewer, then open Security under the Windows Logs. We can see the different events that have occurred, including those we configured MS Windows 2019 to log as part of auditing. In the screenshot below, we have selected an event with ID 4624, i.e., a user has successfully logged in to a system.
 
-![Screenshot of MS Windows Event Viewer](https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/1d030dd062ddb6737be9091b08cd9c89.png)
 
 The table below shows some example logon event IDs.
 
