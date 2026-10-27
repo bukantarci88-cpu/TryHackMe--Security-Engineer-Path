@@ -212,4 +212,3 @@ curl-X POST https://example.com/api/login \
 - Used heavily in APIs and web applications
 - Very important in cybersecurity for testing and analyzing API behavior
 
-![Gemini_Generated_Image_twq5p8twq5p8twq5.png](Eng%206%201%20OWASP%20Top%2010%202025%20IAAA%20Failures%20and%20API/Gemini_Generated_Image_twq5p8twq5p8twq5.png)
