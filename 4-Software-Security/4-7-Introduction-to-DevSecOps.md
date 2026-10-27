@@ -18,7 +18,6 @@ m/user-uploads/61a7523c029d1c004fac97b3/room-content/21ff900651b19689600a2a7d0cd
 
 **Agile Model:** Businesses started developing ways that allowed more flexibility and adaptability. Somewhere in early 2000,  **The Agile Methodology** was coined. Soon, a manifesto was released: [Agile Manifesto(opens in new tab)](http://agilemanifesto.org/), emphasising four values for agile development:
 
-![Diagram for Agile Software Development Model stages](https://tryhackme-images.s3.amazonaws.com/user-uploads/61a7523c029d1c004fac97b3/room-content/db09323bd5eed6fb32de796bdb20196f.png)
 
 **DevOps:** DevOps builds a philosophy that emphasises building trust and better liaising between developers and other teams (sysadmins, QA, etc.). This helps the organisation align technological projects to business requirements, increasing the impact and value to the business as projects become more efficient and prioritised accordingly. Changes rolled out are usually small and reversible, visible to all teams involved. This ensures better contribution and communication that helps with the pace and an increased competency when delivering work.
 
@@ -48,8 +47,6 @@ building trust
 #### **Task 3 - The Infinite Loop**
 
 How does DevOps work? DevOps is **visualized as an infinite loop, describing all the comprising phases:**
-
-![the infinite loop diagram describing a DevOps lifecycle](https://tryhackme-images.s3.amazonaws.com/user-uploads/61a7523c029d1c004fac97b3/room-content/538ad9f777ec0153d5d648edd4bcf65a.png)
 
 1. **CI/CD** – In the previous task, we mentioned CI/CD (Continuous Integration and Continuous Deployment); CI/CD deals with the frequent merging of code and adding testing in an automated manner to perform checks as new code is pushed and merged. We can test code as we push and merge thanks to a new dynamic and routine in deployment, which takes the form of minor code changes systematically and routinely. Thanks to this change in dynamic, CI/CD helps detect bugs early and decreases the effort of maintaining modular code massively, which introduces reliable rollbacks of versions/code. 
 2. **INFRASTRUCTURE AS CODE** (IaC) – a way to manage and provision infrastructure through code and automation. Thanks to this approach, we can reuse code used to deploy infrastructure (for example, cloud instances), which helps in consistent resource creation and management. Standard tools for IaC are terraform, vagrant, etc. We will use these tools further in the pathway as we experiment with IaC security.
@@ -82,8 +79,6 @@ Shifting Left means that  DevOps teams focus on instilling security from the 
 Implementing security measures during all stages of the development lifecycle (shifting left) rather than at the end of the cycle will ensure the software is designed with security best practices built in. By detecting security flaws early in development, remediation costs are lower, and there would be no need to roll back changes as they are being addressed on time. This reduces cost, builds trust, and improves the security and quality of the product.
 
 **Why are we shifting left**
-
-![Shifting Left Benefits](https://tryhackme-images.s3.amazonaws.com/user-uploads/61a7523c029d1c004fac97b3/room-content/2078c48d1463aaf4245f2ed0d1175cab.png)
 
 The Shift-Left approach ensures these flaws are caught early by introducing processes from the start. In this fast-paced environment, post-development security reviews of new software versions or analysis of cloud infrastructure configurations become a bottleneck. Even when problems are discovered, there is not enough time to remediate them before the next version or feature is introduced. To keep up with customer needs, they need a fast-paced environment for scaling and growth. Security is at risk of being left behind; instilling security in the beginning and adapting security testing to become flexible and adapted to the development lifecycle increases the chances of addressing things promptly.
 
@@ -198,4 +193,3 @@ DevOps
 
 THM{ONE_TWO_THREE}
 
-![image.png](DevSecOps%201-1-Introduction-to-DevSecOps/image.png)
