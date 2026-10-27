@@ -134,8 +134,6 @@ THM{[Roles.and.Responsibilities.of.IR.and.IM](http://roles.and.responsibilities.
 
 #### **Task 4 - The Process of Incident Management**
 
-![NIST incident management framework](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/dcab2ddeb05cd1300a0d2142d87b447e.png)
-
  **1. Preparation:** Preparation ensures teams can respond quickly and effectively during an incident.
 
 - Identify stakeholders and communication/call trees.
