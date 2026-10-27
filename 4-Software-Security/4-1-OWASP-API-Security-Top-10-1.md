@@ -231,14 +231,12 @@ Answer: **Yea**
 > What is the HTTP response code when you send a POST request to **/apirule4/sendOTP_s** using the email address hr@mht.com?
 > 
 
-![](https://miro.medium.com/v2/resize:fit:700/1*dZXH9YiLsHUV2sUf5ZZVMw.png)
 
 Answer: **200**
 
 > What is the “msg key” value after an HTTP POST request to **/apirule4/sendOTP_s** using the email address sale@mht.com?
 > 
 
-![](https://miro.medium.com/v2/resize:fit:700/1*19bgvAWjFfIFAiOuLS5mOQ.png)
 
 Answer: **Invalid Email**
 
@@ -255,11 +253,8 @@ Practical Example
 company executives so that they can view all employee's data and perform specific tasks.
 - Bob developed an endpoint `/apirule5/users_v` to fetch data of all employees from the database. To add protection, he added another layer to security by adding a special header `isAdmin` in each request. The API only fetches employee information from the database if `isAdmin=1` and `Authorization-Token` are correct. The authorisation token for HR user Alice is `YWxpY2U6dGVzdCFAISM6Nzg5Nzg=`.
 
-![image.png](Eng%204%201%20OWASP%20API%20Security%20Top%2010%20-%201/image%208.png)
 
 We can see that Alice is a non-admin user (HR) but can see all employee's data by setting custom requests to the endpoint with `isAdmin value = 1`. The issue can be resolved programmatically by implementing correct authorisation rules and checking the functional roles of each user in the database during the query. Bob implemented another endpoint `/apirule5/users_s` that validates each user's role and only shows employees' data if the role is Admin.
-
-![image.png](Eng%204%201%20OWASP%20API%20Security%20Top%2010%20-%201/image%209.png)
 
 **Mitigation Measures**
 
