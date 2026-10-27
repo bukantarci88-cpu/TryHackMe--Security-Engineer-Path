@@ -206,11 +206,7 @@ he had successfully developed a login API, but there must be a "Forgot Password"
 authenticated user will use that One Time Password (OTP) to recover the
 account.
 
-![image.png](Eng%204%201%20OWASP%20API%20Security%20Top%2010%20-%201/image%206.png)
-
 Finally, Bob came up with an intelligent solution `(/apirule4/sendOTP_s)` and enabled rate limiting such that the user has to wait 2 minutes to request an OTP token again.
-
-![image.png](Eng%204%201%20OWASP%20API%20Security%20Top%2010%20-%201/image%207.png)
 
 <img width="782" height="424" alt="image 9" src="https://github.com/user-attachments/assets/47c74ca9-0d4d-4010-96ea-ba302ed2ec98" />
 
