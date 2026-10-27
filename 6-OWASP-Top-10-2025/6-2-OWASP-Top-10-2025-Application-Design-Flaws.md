@@ -182,5 +182,3 @@ Security issues such as **Security Misconfigurations, Software Supply Chain Fail
 ✅ Strong cryptographic practices
 
 The key lesson: build security from the beginning, question default settings, and continuously evaluate risks across the entire application lifecycle.
-
-![Gemini_Generated_Image_3m8oi63m8oi63m8o.png](Eng%206%202%20OWASP%20Top%2010%202025%20Application%20Design%20Flaws/Gemini_Generated_Image_3m8oi63m8oi63m8o.png)
