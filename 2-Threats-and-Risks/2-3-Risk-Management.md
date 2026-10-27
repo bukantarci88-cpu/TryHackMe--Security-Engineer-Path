@@ -175,8 +175,6 @@ We have two approaches when it comes to risk analysis:
 
 The figure below shows a table matching impact with probability. We would allocate fewer resources to respond to a risk that is unlikely to occur and has a trivial effect; however, it is the opposite case if the risk is likely to occur and has a significant impact. The former case is a low risk, while the latter is a high risk. Consequently, the response is decided accordingly.
 
-![Table with impact (horizontal axis) and probability (vertical axis)](https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/c2cab5ae8c38c4c5b827374692534b35.png)
-
 **Quantitative Risk Analysis**
 
 **Single Loss Expectancy:** Using quantitative analysis, we need to assign monetary values and numeric percentages. Let’s start with the following equation:
