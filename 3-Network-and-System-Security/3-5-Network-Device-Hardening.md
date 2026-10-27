@@ -169,19 +169,15 @@ Routers and switches must be hardened for the network infrastructure to be secur
 
 - **Setting up the device**: While setting up any network device, it is necessary to fill in all relevant details like hostname, timezone, logging, and more. These features assist in conducting incident handling in case of a compromise. For example, logging must be enabled to log all the events with the default alert level `Debug`. Similarly, timezone and time synchronisation must be set accurately to properly correlate events with their occurrence time. You can enable and modify these settings through `System > System` and select the desired option.
 
-![How to set up a device](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/27acc27c490c8b94858ef7ad2bad42ac.png)
 
 - **Change default credentials**: Usually, the admin web interface is protected through a username and password, and people tend to ignore changing the default. A threat actor can access the router's admin interface and compromise the whole network using default credentials. We can change the default password in OpenWrt through `System > Administration`, enter a new password, and click the `Save` button.
 
-![How to change password in openwrt](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/c2372f525095a6bcc018a53add0dc280.png)
 
 - **Enable secure network protocols**: For a network device to maintain the confidentiality, integrity, and availability of network traffic, secure protocols must be enabled. Secure protocols like HTTPS, SSH, and SSL/TLS offer encrypted authentication mechanisms and communications to stop unauthorised access and eavesdropping. By enabling secure protocols on a router, you can reduce the risk of data breaches, man-in-the-middle attacks, and other security threats. You can enable SSH in OpenWrt through `System > Administration > SSH Access`, then select the interface and port number and click `Save & Apply`. Moreover, you can also add specific public SSH-Keys for passwordless login.
 
-![How to disable or enable ssh](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/34a736adbec438bd5318fb92cdfeddd5.png)
 
 - **Disabling unnecessary scripts**: Almost every network device executes some startup scripts to provide a better user experience to a user. For example, crontab is executed on startup to verify and execute any cron job. Threat actors try to gain persistent access on a network device by adding their malicious scripts on the startup. We can add/remove startup scripts and set the priority through `System > Startup`.
 
-![How to add or remove startup binaries](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/96abbe862786f4312a0b56578ded64da.png)
 
 - **Securing Wi-Fi**: If the router has Wi-Fi capabilities, securing the Wi-Fi by enabling strong encryption like WPA2/WPA3, disabling SSID broadcast, changing default passwords, and more.
 
@@ -231,23 +227,17 @@ Routers and switches must be hardened for the network infrastructure to be secur
 
 - **Manage traffic rules**: Network devices allow you to create and implement traffic rules that accept/deny network traffic. For example, we notice that the data of users connected with our network device is being exfiltrated to a command and control server IP address. We can create a rule to block all traffic where the destination IP matches the attacker's command and control server. We can add/edit traffic rules through `Network > Firewall > Traffic Rules`, and click `Add` to create a new rule.
 
-![how to configure traffic rules](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/49be5859e279b734eb63be67a45f7f7e.png)
-
 - **Monitor traffic**: As a network administrator, keeping track of network traffic, like uploads and downloads of data at different intervals, is essential. For example, you have excessive data uploaded from one of the email servers to an unknown IP address. Such alerts enable you to take remedial measures and stop data pilferage timely. Usually, network devices provide real-time graphs to monitor the traffic. We can view real-time traffic statistics through `Status > Realtime Graph > Traffic`.
 
-![How to view real-time traffic statistics](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/ba97ccd65f50e4a40033204ae8e81e4f.png)
 
 - **Configuring port forwarding**: A firewall's port forwarding capability enables inbound traffic from the internet or other sources to be routed to a particular device or service on the internal network. The firewall can send incoming traffic to the appropriate device or service on the internal network by establishing port forwarding rules while blocking any other incoming traffic that does not comply with the rules. This feature helps host applications that need outside access, granting remote control of internal devices. Port forwarding should be used carefully because it can expose internal devices and services to potential security issues if improperly secured and configured. Threat actors could add new rules here for creating connections to external command and control servers. We can configure port forwarding through `Network > Firewall > Port Forwards`, and click the `Add` button.
 
-![how to carry port forwarding](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/d9f216eb279699879693674eaf1e195d.png)
 
 - **Monitoring scheduled tasks**: It is important to monitor scheduled tasks to confirm that the original scheduled tasks lists are not modified by a threat actor. To add or remove scheduled tasks, which in our case are handled by cron, navigate to `System > Scheduled Tasks`, add the new cron job, and click `Save`. You can learn how to create cron jobs [here(opens in new tab)](https://phoenixnap.com/kb/set-up-cron-job-linux).
 
-![how to set up a cron job](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/0a9310b6c761997c1e1a2191b8f486b1.png)
 
 - **Update firmware**: It is essential to update the firmware and installed packages on a regular basis to avoid any know/unknown attacks. We can update the firmware through `System > Software`.
 
-![how to update firmware](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/1dfafd4df7da34ff724093f1ad436c13.png)
 
 **Additional Techniques in an Enterprise Environment:** 
 
