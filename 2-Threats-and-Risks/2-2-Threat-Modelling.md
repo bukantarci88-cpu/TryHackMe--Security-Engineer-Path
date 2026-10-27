@@ -206,11 +206,7 @@ Lastly, the critical assets that you handle based on your business stakeholders 
 
 Given this scenario, you can use the MITRE ATT&CK framework and ATT&CK Navigator to map and understand the significant techniques attributed to the provided threat groups and those affecting GCP and web applications.
 
-![View filtered with APT28 techniques.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/c0c43eff99b8a297d50ecc36170e0518.png)
-
 *Techniques used by APT28*
-
-![Techniques related to GCP.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/cb0e387e5b693a3d6eba7b839e5aef2d.png)
 
 *Techniques related to Google Cloud*
 
