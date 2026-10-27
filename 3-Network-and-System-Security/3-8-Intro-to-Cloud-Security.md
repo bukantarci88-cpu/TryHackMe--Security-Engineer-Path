@@ -30,8 +30,6 @@ Cloud computing is one of the IT industry's most common and evolving terms. In s
 - Cloud Providers’ Responsibility: In SaaS, everything is managed by the cloud provider, including infrastructure, OS and software.
 - Customer Responsibility: ****This model is used by customers who need more technical skills in managing things. They only pay and use the services without worrying about the underlying architecture.
 
-![image for cloud](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/f04ce2f08624ac4c7973ad4e6e6275cd.png)
-
 **Cloud Deployment Models**
 
 **Public Cloud:** In the public cloud, as the name suggests, resources provided by cloud providers are shared among multiple customers. **Organisation A** will use resources from the same hardware that offers services to any other organisation. For example, Microsoft Azure and Amazon Web Services (AWS) are examples of public clouds. However, they also offer Virtual Private Cloud (VPC) services.
@@ -69,7 +67,6 @@ To understand cloud security concepts, first, we need to know what we need to pr
 
 **Cloud Data Lifecycle:**  Data on the cloud should be managed through its lifecycle to ensure its secure usage in every phase.
 
-![image for cloud data life cycle](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/6ffcd9635986909d32ad621e95827e1c.png)
 
 **Security Aspects in Cloud Data Lifecycle:** Each phase of the cloud data lifecycle requires protection. Below are the cloud data lifecycle stages, security considerations and requirements.
 
@@ -131,7 +128,6 @@ THM{CLOUD_11101}
 
  **Task 4 - Cloud Security Risks Concerning Deployment Models**
 
-![image for cloud types](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/0793905dd65076f2f379c5fa59e7afef.png)
 
 **Private Cloud:** As studied, a private cloud is an environment in which resources are dedicated to a single customer. These are suitable for customers that are more concerned about the security of their data. Associated risks are as under:
 
@@ -170,7 +166,6 @@ In cloud computing, Access Management is implemented through the following measu
 - **Authentication Factors**: Each identity is allocated with a specific set of characteristics unique to that particular identity and helps to distinguish it from other identities. If they are matched, then the essence of that user is confirmed. These characteristics are called “Authentication Factors”, which include: username, password, PIN, biometric, certificate, FaceID, etc.
 - **Roles**: Each identity has a specific role which defines the domain under which that particular identity functions.
 
-![Image for authentication](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/fa212dcaa2ed9400ff34bd738c96f363.png)
 
 In Amazon, Access Management is implemented through Identity & Access Management (IAM). IAM is considered the “heart of access management” services to configure & perform fine-grained control and access policies to AWS resources. It is a web service that enables Amazon users to grant access to various services & resources to different users.
 
