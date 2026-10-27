@@ -22,8 +22,6 @@ To help grasp what your security posture is, you can start by doing the followin
 
 **SSDLC Processes**
 
-![Risk Matrix](https://tryhackme-images.s3.amazonaws.com/user-uploads/61a7523c029d1c004fac97b3/room-content/3d1e3379a1e3ccc46f3c7471095cbfae.png)
-
 - **Risk Assessment** during the early stages of SDLC, it is essential to identify security considerations that promote a security by design approach when functional requirements are gathered in the planning and requirements stages. For example, if a user requests a blog entry from a site, the user should not be able to edit the blog or remove unnecessary input fields.
 - **Threat Modelling** - is the process of identifying potential threats when there is a lack of appropriate safeguards. It is very effective when following a risk assessment and during the design stage of the SDLC, as Threat Modelling focuses on what should not happen. In contrast, design requirements state how the software will behave and interact. For example, ensure there is verification when a user requests account information.
 - **Code Scanning / Review** - Code reviews can be either manual or automated. Code Scanning or automated code reviews can leverage Static and Dynamic Security testing technologies. These are crucial in the Development stages as code is being written.
@@ -58,8 +56,6 @@ Risk assessment is used to determine the level of the potential threat. Risk ide
 
 There are several types of Risk assessments best suited for different scenarios. Qualitative Risk Assessment and Quantitative Risk Assessment
 
-![Risk Matrix](https://tryhackme-images.s3.amazonaws.com/user-uploads/61a7523c029d1c004fac97b3/room-content/e5fb607dfd764c3e162da1783dd58e02.png)
-
 **Answer the questions below**
 
 > What is a formula to assign a Qualitative Risk level?
@@ -85,8 +81,6 @@ STRIDE stands for Spoofing, Tampering, Repudiation, Information Disclosure, Deni
 - **Denial of Service:** Exhaustion of resources, preventing authorised users from accessing a system, violating availability.
 - **Elevation of Privilege:** Gaining unauthorised access by escalating privileges, violating authorisation principles.
 
-![STRIDE diagram](https://tryhackme-images.s3.amazonaws.com/user-uploads/61a7523c029d1c004fac97b3/room-content/a5904cf6f063a62e77df6623eb1cbd33.png)
-
 **DREAD**
 
 The abbreviation DREAD stands for five questions about each potential threat: Damage Potential, Reproducibility, Exploitability, Affected Users, and Discoverability. DREAD ranks threats by assigning scores based on their severity and risk probability. Here are its components:
@@ -109,7 +103,6 @@ PASTA stands for Process for Attack Simulation and Threat Analysis. It aligns te
 - **Attack/Exploit Enumeration & Modelling:** Simulate attack paths and vulnerabilities.
 - **Risk Impact Analysis:** Document risks and propose mitigation steps.
 
-![PASTA diagram](https://tryhackme-images.s3.amazonaws.com/user-uploads/61a7523c029d1c004fac97b3/room-content/8222ed08e31753d975ec3ec3aa2e43a9.png)
 
 **Answer the questions below**
 
@@ -146,7 +139,6 @@ PASTA
 
 **Choosing tools:** SAST, DAST, and IAST are great tools that complement each other. A key strength of DAST is that it identifies runtime issues—weaknesses that aren't discoverable when an application isn't running. SAST is excellent at identifying vulnerabilities while code is being written. Additionally, DAST looks at how an application responds to an attack, providing helpful insight into how likely it would be for that vulnerability to be manipulated. AST enables DevSecOps and supports continuous testing, monitoring, assessment, and validation in real-time. IAST helps prioritise and alert on vital critical risks, as defined by business goals and application security needs. 
 
-![Security Testing Timeline](https://tryhackme-images.s3.amazonaws.com/user-uploads/61a7523c029d1c004fac97b3/room-content/ed41446ac19972111b12a8b41bdb3599.png)
 
 Above is a standard timeline when choosing when to implement security testing tooling. As described earlier, SAST is a static approach; there is no need for a running application. Therefore, SAST can be implemented in the earliest development stages. SCA typically work best for Identifying open source components, like packages via dependencies. It is also beneficial for identifying open-source licenses being used, especially from a legal risk perspective. Because of this, you can implement governance and control by enforcing security and license policies across the different stages of SDLC.
 
