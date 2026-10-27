@@ -99,4 +99,3 @@ What are the contents of flag.txt? THM{INSECURE_DESERIALIZATION}
 <img width="1218" height="725" alt="image 6" src="https://github.com/user-attachments/assets/eb79ae52-e320-4dde-9f79-0302608f1467" />
 
 
-![Gemini_Generated_Image_6fcpdg6fcpdg6fcp.png](Eng%206%203%20OWASP%20Top%2010%202025%20Insecure%20Data%20Handling/Gemini_Generated_Image_6fcpdg6fcpdg6fcp.png)
